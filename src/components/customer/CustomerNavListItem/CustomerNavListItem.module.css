@@ -1,0 +1,12 @@
+.CustomerNavListItem {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+}
+.CustomerNavListItem :hover{
+  font-weight: 600;
+}
+.CustomerNavListItem a {
+    color: inherit;
+    text-decoration: inherit;
+}
