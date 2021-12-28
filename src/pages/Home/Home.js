@@ -5,7 +5,7 @@ const Home = () => {
   const { data, isLoading, error } = useFetch(
     "https://salty-journey-85003.herokuapp.com/api/customers"
   );
-  console.log(data)
+
    if (isLoading) {
      return <div>loading...</div>;
    }
