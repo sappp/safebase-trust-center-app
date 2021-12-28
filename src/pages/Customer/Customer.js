@@ -26,7 +26,7 @@ const Customer = () => {
         </div>
         <div className="p-d-flex p-flex-row">
           {data[0]?.["secuirty_programs"]
-            .filter((scp) => scp.type === "LOGO")
+            .filter((scp) => scp.field_type === "LOGO")
             .reduce((acc, scp) => acc.concat(scp.fields), [])
             .map((fields, index) => (
               <SecProgramLogoField
