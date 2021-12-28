@@ -7,7 +7,7 @@ const Customer = () => {
 
   const url = `https://salty-journey-85003.herokuapp.com/api/customers/${customerId}`;
   const { data, isLoading, error } = useFetch(url, true);
-
+  console.log(data)
   if (isLoading) {
     return <div>loading...</div>;
   };
@@ -42,7 +42,7 @@ const Customer = () => {
           <SecuirtyProgramView
             key={scp.name}
             name={scp.name}
-            type={scp.type}
+            type={scp.field_type}
             fields={scp.fields}
           />
         ))}
